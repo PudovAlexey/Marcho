@@ -32,7 +32,7 @@ dd {
     margin: 0;
 }
 
-ul [class] {
+ul[class] {
     list-style: none;
 }
 
@@ -50,4 +50,8 @@ select {
 
 body {
     min-height: 100vh;
+}
+
+a[class] {
+    text-decoration: none;
 }

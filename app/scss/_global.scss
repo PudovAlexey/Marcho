@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
@@ -27,4 +31,33 @@ a {
     line-height: 26px;
     color: $default;
     @extend %quicksand-500;
+}
+
+.blocks {
+    margin-bottom: 120px;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    @extend %roboto-700;
+    text-align: center;
+    color: $title;
+    text-transform: uppercase;
+}
+
+.text-subtitle {
+    @extend %quicksand-500;
+    line-height: 26px;
+    color: $default;
+    text-align: center;
+    max-width: 530px;
+    margin: 0 auto 55px;
+}
+
+.text {
+    @extend %quicksand-500;
+    font-size: 16px;
+    line-height: 26px;
 }
