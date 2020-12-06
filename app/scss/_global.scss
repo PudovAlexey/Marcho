@@ -16,6 +16,10 @@ body {
     flex-direction: column;
 }
 
+.is-active-item {
+    background-color: #accent;
+}
+
 .main {
     flex-grow: 1;
 }
@@ -26,7 +30,7 @@ body {
     padding: 0 15px;
 }
 
-a {
+.link {
     font-size: 16px;
     line-height: 26px;
     color: $default;
@@ -39,7 +43,7 @@ a {
 
 .title {
     font-size: 48px;
-    line-height: 26px;
+    line-height: 72px;
     margin-bottom: 20px;
     @extend %roboto-700;
     text-align: center;
@@ -60,4 +64,175 @@ a {
     @extend %quicksand-500;
     font-size: 16px;
     line-height: 26px;
+}
+
+.bread-crumbs {
+    display: flex;
+    
+}
+
+.radio {
+    position: relative;
+    &__square {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid $default;
+        margin-right: 15px;
+    }
+    &-checked__active {
+        display: block;
+        position: absolute;
+        line-height: 19px;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.store-item {
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__stars {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+}
+
+    &__items {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        &--shop-page {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 26px;
+        color: $title;
+        @extend %roboto-400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    &__price--old {
+        color: #ccccce;
+        text-decoration: line-through;
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+    &__sale {
+        position: absolute;
+        top: 26px;
+        left: 25px;
+        @extend %roboto-400;
+        padding: 2px 12px;
+        color: #fff;
+        background-color: $accent;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__actions {
+        position: absolute;
+        right: 80px;
+        bottom: 192px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        background-color: #fff;
+        width: 210px;
+        height: 52px;
+        box-shadow: 0px 5px 30px 0px rgba(152, 152, 152, 0.2);
+        transform: translateY(500%);
+    }
+
+    &__action+.store-item__action {
+        border-left: 1px solid $default;
+    }
+
+    &__action {
+        border: none;
+        padding: 0 27px;
+        background-color: transparent;
+    }
+
+    &__item:hover {
+        .store-item__actions {
+            transform: translateY(0%);
+        }
+    }
+
+    &__button {
+        display: block;
+        position: relative;
+        @extend %roboto-400;
+        text-transform: uppercase;
+        margin: 40px auto 0;
+        border: 1px solid $accent;
+        padding: 10px 40px;
+        background-color: transparent;
+        cursor: pointer;
+        color: $title;
+        max-width: 170px;
+    }
+
+    &__action {
+        cursor: pointer;
+
+        svg path {
+            fill: $title;
+        }
+    }
+
+    &__action:hover {
+        svg path {
+            fill: $accent;
+        }
+    }
+}
+
+.social {
+&__list {
+    display: flex;
+    align-items: center;
+    border-top: 30px;
+}
+
+&__item {
+    & + & {
+        margin-left: 18px;
+    }
+}
+
+&__link {
+    transition: all .3s;
+
+    path {
+        fill: $default;
+    }
+
+    &:hover {
+        path {
+            fill: $accent;
+        }
+    }
+}
 }

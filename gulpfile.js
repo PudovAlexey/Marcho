@@ -3,6 +3,7 @@ const scss = require('gulp-sass');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
@@ -17,7 +18,10 @@ function browsersync() {
 }
 
 function styles() {
-    return src('app/scss/*.scss')
+    return src([
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+    'app/scss/**/*.scss',
+])
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
@@ -28,7 +32,24 @@ function styles() {
         .pipe(browserSync.stream())
 }
 
-function scripts() {
+function globalScripts() {
+    return src([
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/slick-carousel/slick/slick.js',
+            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+            'node_modules/rateyo/min/jquery.rateyo.min.js',
+            'app/js/global.js'
+        ])
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(concat('min.global.js'))
+        .pipe(uglify())
+        .pipe(dest('app/js'))
+        .pipe(browserSync.stream())
+}
+
+function scriptsMain() {
     return src([
             'node_modules/jquery/dist/jquery.js',
             'node_modules/slick-carousel/slick/slick.js',
@@ -36,7 +57,39 @@ function scripts() {
             'node_modules/rateyo/min/jquery.rateyo.min.js',
             'app/js/main.js'
         ])
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(dest('app/js'))
+        .pipe(browserSync.stream())
+}
+
+function scriptsRegister() {
+    return src([
+            'app/js/register.js'
+        ])
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(concat('/min.register.js'))
+        .pipe(uglify())
+        .pipe(dest('app/js'))
+        .pipe(browserSync.stream())
+}
+
+function scriptsShop() {
+    return src([
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+            'node_modules/rateyo/min/jquery.rateyo.min.js',
+            'app/js/shop.js'
+        ])
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(concat('/min.shop.js'))
         .pipe(uglify())
         .pipe(dest('app/js'))
         .pipe(browserSync.stream())
@@ -62,7 +115,10 @@ function build() {
     return src([
             'app/**/*.html',
             'app/css/style.min.css',
-            'app/js/main.min.js'
+            'app/js/min.global.js',
+            'app/js/main.min.js',
+            'app/js/min.register.js',
+            'app/js/min.shop.js'
         ], { base: 'app' })
         .pipe(dest('dist'))
 }
@@ -73,14 +129,17 @@ function cleanDist() {
 
 function watching() {
     watch(['app/scss/**/*.scss'], styles);
-    watch(['app/js/**/*.js', `!app/js/main.min.js`], scripts);
+    watch(['app/js/**/*.js', `!app/js/main.min.js`,  `!app/js/min.global.js`,  `!app/js/min.register.js`,  `!app/js/min.shop.js`], scriptsMain, scriptsRegister, scriptsShop, globalScripts);
     watch((['app/**/*.html'])).on('change', browserSync.reload);
 }
 
 
 
 exports.styles = styles;
-exports.scripts = scripts;
+exports.scriptsMain = scriptsMain;
+exports.scriptsRegister = scriptsRegister;
+exports.globalScripts = globalScripts;
+exports.scriptsShop = scriptsShop;
 exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
@@ -88,4 +147,4 @@ exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, globalScripts, scriptsMain, scriptsRegister, scriptsShop, browsersync, watching);
