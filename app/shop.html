@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Marcho</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img src="images/logo.png" alt="logo" class="logo__img">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--active" href="#">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Shop</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Page</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-nav">
+                    <a class="user-nav__link user-nav__link--user" href="#"></a>
+                    <a class="user-nav__link user-nav__link--search" href="#"></a>
+                    <a class="user-nav__link user-nav__link--heart" href="#">
+                        <span class="user-nav__num">3</span>
+                    </a>
+                    <a class="user-nav__link user-nav__link--cart" href="#">
+                        <span class="user-nav__num">7</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main blocks">
+        <section class="middle-menu blocks" style="background-image: url(images/bg-middle.jpg);">
+            <h2 class="middle-menu__title">
+                Register
+            </h2>
+
+            <div class="bread-crumbs">
+                <a href="index.html" class="bread-crumbs__item bread-crumbs__item--home">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
+                        height="16px">
+                        <path fill-rule="evenodd" fill="rgb(114, 114, 114)"
+                            d="M7.999,-0.001 L0.228,6.857 C-0.040,7.095 -0.069,7.508 0.164,7.782 L0.164,7.782 C0.398,8.055 0.805,8.084 1.073,7.847 L1.360,7.594 L1.360,14.034 C1.360,15.119 2.226,15.999 3.294,15.999 L6.903,15.999 L6.903,10.725 C6.903,10.093 7.408,9.579 8.031,9.579 L8.031,9.579 C8.654,9.579 9.159,10.093 9.159,10.725 L9.159,15.999 L12.704,15.999 C13.772,15.999 14.638,15.119 14.638,14.034 L14.638,7.594 L14.924,7.847 C15.193,8.084 15.600,8.055 15.833,7.782 L15.833,7.782 C16.067,7.508 16.038,7.095 15.769,6.857 L7.999,-0.001 ZM13.349,14.034 C13.349,14.396 13.060,14.689 12.704,14.689 L10.448,14.689 L10.448,10.725 C10.448,9.369 9.366,8.269 8.031,8.269 L8.031,8.269 C6.696,8.269 5.614,9.369 5.614,10.725 L5.614,14.689 L3.294,14.689 C2.938,14.689 2.649,14.396 2.649,14.034 L2.649,6.456 L7.999,1.734 L13.349,6.456 L13.349,14.034 Z" />
+                    </svg>
+                    Home
+                </a>
+                <span class="bread-crumbs__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px"
+                        height="10px">
+                        <path fill-rule="evenodd" fill="rgb(114, 114, 114)"
+                            d="M8.907,5.228 L4.569,9.889 C4.507,9.956 4.436,9.989 4.355,9.989 C4.275,9.989 4.203,9.956 4.141,9.889 L3.675,9.389 C3.613,9.322 3.583,9.245 3.583,9.159 C3.583,9.072 3.613,8.996 3.675,8.929 L7.334,4.999 L3.675,1.068 C3.613,1.002 3.583,0.925 3.583,0.838 C3.583,0.752 3.613,0.675 3.675,0.608 L4.141,0.108 C4.203,0.042 4.275,0.008 4.355,0.008 C4.436,0.008 4.507,0.042 4.569,0.108 L8.907,4.768 C8.969,4.835 8.999,4.912 8.999,4.999 C8.999,5.086 8.969,5.162 8.907,5.228 ZM5.425,4.999 C5.425,5.086 5.395,5.162 5.332,5.228 L0.995,9.889 C0.932,9.956 0.861,9.989 0.781,9.989 C0.700,9.989 0.629,9.956 0.567,9.889 L0.101,9.389 C0.040,9.322 0.008,9.245 0.008,9.159 C0.008,9.072 0.040,8.996 0.101,8.929 L3.759,4.999 L0.101,1.068 C0.040,1.002 0.008,0.925 0.008,0.838 C0.008,0.752 0.040,0.675 0.101,0.608 L0.567,0.108 C0.629,0.042 0.700,0.008 0.781,0.008 C0.861,0.008 0.932,0.042 0.995,0.108 L5.332,4.768 C5.395,4.835 5.425,4.912 5.425,4.999 Z" />
+                    </svg>
+                </span>
+                <a href="register.html" class="bread-crumbs__item bread-crumbs__item--current">
+                    Shop page
+                </a>
+            </div>
+        </section>
+        <div class="container">
+            <div class="shop__items">
+
+                <aside class="aside">
+                    <div class="aside__item">
+                        <h3 class="aside__title">
+                            Search
+                        </h3>
+
+                        <input type="text" class="aside__inp" placeholder="Search your keyword....">
+                        <button class="aside__search">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="15px" height="15px">
+                                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                    d="M11.008,9.681 C11.746,8.674 12.187,7.435 12.187,6.093 C12.187,2.733 9.453,-0.001 6.094,-0.001 C2.734,-0.001 -0.000,2.733 -0.000,6.093 C-0.000,9.453 2.734,12.187 6.094,12.187 C7.436,12.187 8.674,11.745 9.682,11.007 L13.674,15.000 L15.000,13.673 L11.008,9.681 L11.008,9.681 ZM6.094,10.312 C3.767,10.312 1.875,8.419 1.875,6.093 C1.875,3.767 3.767,1.874 6.094,1.874 C8.420,1.874 10.312,3.767 10.312,6.093 C10.312,8.419 8.420,10.312 6.094,10.312 L6.094,10.312 Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="aside__item">
+                        <h3 class="aside__title">
+                            Price Filter
+                        </h3>
+                        <input type="text" class="js-range-slider" name="my_range" value="" data-type="double"
+                            
+                            data-min="0" 
+                            data-max="1500" 
+                            data-from="500" 
+                            data-to="1000" 
+                            data-grid="false"
+                            data-hide-min-max="true"
+                            data-hide-from-to="true" 
+                            />
+                            <div class="aside__range">
+                            <div class="aside__range-box">
+                                Price:
+                                $<span class="aside__range--from"></span>-
+                                $<span class="aside__range--to"></span>
+                            </div>
+                                <button class="aside__range-btn">Filter</button>
+                            </div>
+                    </div>
+                    <div class="aside__item">
+                        <h3 class="aside__title">
+                            Color Filter
+                        </h3>
+
+                        <div class="aside__colors">
+                            <div class="aside__colors-item">
+                                <span class="aside__colors-name">
+                                    Blue (15)
+                                </span>
+                                <span class="aside__colors-square aside__colors-square--blue" id="radio-button">
+                                    <span></span>
+                                </span>
+                            </div>
+                            <div class="aside__colors-item">
+                                <span class="aside__colors-name">
+                                    Red (09)
+                                </span>
+                                <span class="aside__colors-square aside__colors-square--pink" id="radio-button">
+                                    <span></span>
+                                </span>
+                            </div>
+                            <div class="aside__colors-item">
+                                <span class="aside__colors-name">
+                                    Green (28)
+                                </span>
+                                <span class="aside__colors-square aside__colors-square--aqua" id="radio-button">
+                                    <span></span>
+                                </span>
+                            </div>
+                            <div class="aside__colors-item">
+                                <span class="aside__colors-name">
+                                    Orange (11)
+                                </span>
+                                <span class="aside__colors-square aside__colors-square--orange" id="radio-button">
+                                    <span></span>
+                                </span>
+                            </div>
+                            <div class="aside__colors-item">
+                                <span class="aside__colors-name">
+                                    Black (05)
+                                </span>
+                                <span class="aside__colors-square aside__colors-square--black" id="radio-button">
+                                    <span></span>
+                                </span>
+                            </div>
+                            <div class="aside__colors-item">
+                                <span class="aside__colors-name">
+                                    Purple (21)
+                                </span>
+                                <span class="aside__colors-square aside__colors-square--purple" id="radio-button">
+                                    <span></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside__item">
+                        <h3 class="aside__title">
+                            Size Filter
+                        </h3>
+                        <div class="aside__size-items">
+                            <div class="aside__size-item">
+                                <span class="aside__size-round" id="radio-button">
+                                    <span></span>
+                                </span>
+                                <span class="aside__size-text">
+                                    X-small
+                                </span>
+                            </div>
+                            <div class="aside__size-item">
+                                <span class="aside__size-round" id="radio-button">
+                                    <span></span>
+                                </span>
+                                <span class="aside__size-text">
+                                    Small
+                                </span>
+                            </div>
+                            <div class="aside__size-item">
+                                <span class="aside__size-round" id="radio-button">
+                                    <span></span>
+                                </span>
+                                <span class="aside__size-text">
+                                    Medium
+                                </span>
+                            </div>
+                            <div class="aside__size-item">
+                                <span class="aside__size-round" id="radio-button">
+                                    <span></span>
+                                </span>
+                                <span class="aside__size-text">
+                                    Large
+                                </span>
+                            </div>
+                            <div class="aside__size-item">
+                                <span class="aside__size-round" id="radio-button">
+                                    <span></span>
+                                </span>
+                                <span class="aside__size-text">
+                                    XXL
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside__item" id="active-bg">
+                        <h3 class="aside__title">
+                            CATEGORY
+                        </h3>
+                        <div class="aside__category-item">
+                            <span class="aside__category-text">Woman</span>
+                            <span class="aside__category-num">48</span>
+                        </div>
+                        <div class="aside__category-item">
+                            <span class="aside__category-text">Man</span>
+                            <span class="aside__category-num">30</span>
+                        </div>
+                        <div class="aside__category-item">
+                            <span class="aside__category-text">Sale Products</span>
+                            <span class="aside__category-num">92</span>
+                        </div>
+                        <div class="aside__category-item">
+                            <span class="aside__category-text">Fashion</span>
+                            <span class="aside__category-num">121</span>
+                        </div>
+                        <div class="aside__category-item">
+                            <span class="aside__category-text">Hot Dress</span>
+                            <span class="aside__category-num">52</span>
+                        </div>
+                        <div class="aside__category-item">
+                            <span class="aside__category-text">Accessories</span>
+                            <span class="aside__category-num">88</span>
+                        </div>
+                    </div>
+                    <div class="aside__item" id="active-bg">
+                        <h3 class="aside__title">
+                            Popular Tags
+                        </h3>
+
+                        <div class="aside__tag-item">
+                            <a href="#" class="aside__tag-link">Sweetshirt</a>
+                            <a href="#" class="aside__tag-link">Man Accessories</a>
+                            <a href="#" class="aside__tag-link">Fashion</a>
+                            <a href="#" class="aside__tag-link">Polo</a>
+                            <a href="#" class="aside__tag-link">T-Shirt</a>
+                            <a href="#" class="aside__tag-link">Jewellery</a>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="shop">
+                    <div class="shop__buttons">
+                        <div class="shop__buttons-viev">
+                            <span class="shop__buttons-name">
+                                Viev
+                            </span>
+                            <span class="shop__buttons-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="15px" height="15px">
+                                    <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                                        d="M-0.000,3.750 L3.750,3.750 L3.750,-0.000 L-0.000,-0.000 L-0.000,3.750 ZM5.625,15.000 L9.375,15.000 L9.375,11.250 L5.625,11.250 L5.625,15.000 ZM-0.000,15.000 L3.750,15.000 L3.750,11.250 L-0.000,11.250 L-0.000,15.000 ZM-0.000,9.375 L3.750,9.375 L3.750,5.625 L-0.000,5.625 L-0.000,9.375 ZM5.625,9.375 L9.375,9.375 L9.375,5.625 L5.625,5.625 L5.625,9.375 ZM11.250,-0.000 L11.250,3.750 L15.000,3.750 L15.000,-0.000 L11.250,-0.000 ZM5.625,3.750 L9.375,3.750 L9.375,-0.000 L5.625,-0.000 L5.625,3.750 ZM11.250,9.375 L15.000,9.375 L15.000,5.625 L11.250,5.625 L11.250,9.375 ZM11.250,15.000 L15.000,15.000 L15.000,11.250 L11.250,11.250 L11.250,15.000 Z" />
+                                </svg>
+                            </span>
+                            <span class="shop__buttons-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="20px" height="15px">
+                                    <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                                        d="M5.835,14.998 L5.835,10.827 L19.994,10.827 L19.994,14.998 L5.835,14.998 ZM5.835,5.413 L19.994,5.413 L19.994,9.585 L5.835,9.585 L5.835,5.413 ZM5.835,0.000 L19.994,0.000 L19.994,4.172 L5.835,4.172 L5.835,0.000 ZM0.007,10.827 L4.429,10.827 L4.429,14.998 L0.007,14.998 L0.007,10.827 ZM0.007,5.413 L4.429,5.413 L4.429,9.585 L0.007,9.585 L0.007,5.413 ZM0.007,0.000 L4.429,0.000 L4.429,4.172 L0.007,4.172 L0.007,0.000 Z" />
+                                </svg>
+                            </span>
+
+                        </div>
+                        <div class="shop__buttons-sort">
+                            <div class="shop__buttons-sort-item">
+                                <span class="shop__buttons-sort-text">
+                                    Sort By Default
+                                </span>
+                                <span class="shop__buttons-sort-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="10px" height="5px">
+                                        <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                                            d="M4.983,4.999 C4.803,4.999 4.624,4.939 4.487,4.820 L0.173,1.048 C-0.102,0.808 -0.102,0.419 0.173,0.179 C0.448,-0.060 0.893,-0.060 1.167,0.179 L4.983,3.516 L8.800,0.180 C9.075,-0.060 9.519,-0.060 9.794,0.180 C10.068,0.420 10.068,0.809 9.794,1.048 L5.480,4.820 C5.344,4.940 5.163,4.999 4.983,4.999 L4.983,4.999 Z" />
+                                    </svg>
+                                </span>
+
+
+                            </div>
+                            <div class="shop__buttons-sort-item">
+                                <span class="shop__buttons-sort-text">
+                                    Show 9
+                                </span>
+                                <span class="shop__buttons-sort-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="10px" height="5px">
+                                        <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                                            d="M4.983,4.999 C4.803,4.999 4.624,4.939 4.487,4.820 L0.173,1.048 C-0.102,0.808 -0.102,0.419 0.173,0.179 C0.448,-0.060 0.893,-0.060 1.167,0.179 L4.983,3.516 L8.800,0.180 C9.075,-0.060 9.519,-0.060 9.794,0.180 C10.068,0.420 10.068,0.809 9.794,1.048 L5.480,4.820 C5.344,4.940 5.163,4.999 4.983,4.999 L4.983,4.999 Z" />
+                                    </svg>
+                                </span>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="store-item__items store-item__items--shop-page">
+                        <div class="store-item__item">
+                            <img src="images/store-item/1.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                                <span class="store-item__price store-item__price--old">$27.00</span>
+                            </div>
+                        </div>
+                        <div class="store-item__item">
+                            <span class="store-item__sale">Sale</span>
+                            <img src="images/store-item/2.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                            </div>
+                        </div>
+                        <div class="store-item__item">
+                            <img src="images/store-item/3.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                            </div>
+                        </div>
+                        <div class="store-item__item">
+                            <span class="store-item__sale">Sale</span>
+                            <img src="images/store-item/4.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                            </div>
+                        </div>
+                        <div class="store-item__item">
+                            <img src="images/store-item/5.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                                <span class="store-item__price store-item__price--old">$27.00</span>
+                            </div>
+                        </div>
+                        <div class="store-item__item">
+                            <span class="store-item__sale">Sale</span>
+                            <img src="images/store-item/6.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                            </div>
+                        </div>
+
+                        <div class="store-item__item">
+                            <span class="store-item__sale">Sale</span>
+                            <img src="images/store-item/7.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                            </div>
+                        </div>
+
+                        <div class="store-item__item">
+                            <span class="store-item__sale">Sale</span>
+                            <img src="images/store-item/8.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                            </div>
+                        </div>
+
+                        <div class="store-item__item">
+                            <span class="store-item__sale">Sale</span>
+                            <img src="images/store-item/9.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                            </div>
+                        </div>
+
+                        <div class="store-item__item">
+                            <span class="store-item__sale">Sale</span>
+                            <img src="images/store-item/10.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                            </div>
+                        </div>
+
+                        <div class="store-item__item">
+                            <span class="store-item__sale">Sale</span>
+                            <img src="images/store-item/11.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text">
+                                <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                <span class="store-item__price ">$34.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="footer ">
+        <div class="container ">
+            <div class="footer-top ">
+                <address class=" footer-top--contact ">
+                    <a class="logo footer-top__logo " href="# ">
+                        <img src="images/logo.png " alt="logo " class="logo__img ">
+                    </a>
+                    <a href="# " class="footer-top__address-link footer-top__address-link--address ">
+                        No. 342 - London Oxford Street,
+                    </a>
+                    <a href="# " class="footer-top__address-link footer-top__address-link--address ">
+                        012 United States
+                    </a>
+                    <a href="mailto:Youremail@gmail.com "
+                        class="footer-top__address-link footer-top__address-link--mail ">
+                        Youremail@gmail.com
+                    </a>
+                    <a href="tel:+0283 838 8393 " class="footer-top__address-link footer-top__address-link--phone ">
+                        +0283 838 8393
+                    </a>
+                    <ul class="footer-top__social-list ">
+                        <li class="footer-top__social-item ">
+                            <a href="# " class="footer-top__social-link ">
+                                <?xml version="1.0 " encoding="UTF-8 "?>
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
+                                    width="9pt " height="14pt " viewBox="0 0 9 14 " version="1.1 ">
+                                    <g id="surface1 ">
+                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; "
+                                            d="M 7.851562 7.875 L 8.25 5.339844 L 5.75 5.339844 L 5.75 3.695312 C 5.75 3.003906 6.097656 2.328125 7.21875 2.328125 L 8.355469 2.328125 L 8.355469 0.171875 C 8.355469 0.171875 7.324219 0 6.339844 0 C 4.277344
+                            0 2.933594 1.214844 2.933594 3.410156 L 2.933594 5.339844 L 0.644531 5.339844 L 0.644531 7.875 L 2.933594 7.875 L 2.933594 14 L 5.75 14 L 5.75 7.875 Z M 7.851562 7.875 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item ">
+                            <a href="# " class="footer-top__social-link ">
+                                <?xml version="1.0 " encoding="UTF-8 "?>
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
+                                    width="14pt " height="14pt " viewBox="0 0 14 14 " version="1.1 ">
+                                    <g id="surface1 ">
+                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; " d="M 12.5625 4.148438 C 12.570312 4.273438 12.570312 4.398438 12.570312 4.523438 C 12.570312 8.316406 9.683594 12.683594 4.40625 12.683594 C 2.78125 12.683594 1.269531 12.214844 0 11.398438 C 0.230469 11.425781
+                            0.453125 11.433594 0.691406 11.433594 C 2.035156 11.433594 3.269531 10.980469 4.253906 10.207031 C 2.992188 10.179688 1.9375 9.355469 1.574219 8.21875 C 1.75 8.242188 1.925781 8.261719 2.113281 8.261719 C 2.371094 8.261719 2.628906
+                            8.226562 2.871094 8.164062 C 1.554688 7.898438 0.570312 6.742188 0.570312 5.347656 L 0.570312 5.3125 C 0.949219 5.527344 1.394531 5.660156 1.867188 5.675781 C 1.09375 5.160156 0.585938 4.28125 0.585938 3.285156 C 0.585938 2.753906
+                            0.726562 2.265625 0.976562 1.839844 C 2.390625 3.578125 4.511719 4.71875 6.894531 4.839844 C 6.847656 4.628906 6.824219 4.40625 6.824219 4.183594 C 6.824219 2.601562 8.101562 1.316406 9.691406 1.316406 C 10.519531 1.316406 11.265625
+                            1.660156 11.789062 2.222656 C 12.4375 2.097656 13.058594 1.855469 13.609375 1.527344 C 13.394531 2.195312 12.941406 2.753906 12.347656 3.109375 C 12.925781 3.046875 13.484375 2.886719 14 2.664062 C 13.609375 3.234375 13.121094
+                            3.738281 12.5625 4.148438 Z M 12.5625 4.148438 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item ">
+                            <a href="# " class="footer-top__social-link ">
+                                <?xml version="1.0 " encoding="UTF-8 "?>
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
+                                    width="14pt " height="16pt " viewBox="0 0 14 16 " version="1.1 ">
+                                    <g id="surface1 ">
+                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; " d="M 3.132812 14 L 0.230469 14 L 0.230469 4.652344 L 3.132812 4.652344 Z M 1.679688 3.378906 C 0.753906 3.378906 0 2.609375 0 1.679688 C 0 0.753906 0.753906 0 1.679688 0 C 2.609375 0 3.363281 0.753906 3.363281
+                            1.679688 C 3.363281 2.609375 2.609375 3.378906 1.679688 3.378906 Z M 13.996094 14 L 11.101562 14 L 11.101562 9.449219 C 11.101562 8.367188 11.078125 6.976562 9.589844 6.976562 C 8.082031 6.976562 7.851562 8.152344 7.851562 9.371094
+                            L 7.851562 14 L 4.953125 14 L 4.953125 4.652344 L 7.734375 4.652344 L 7.734375 5.929688 L 7.777344 5.929688 C 8.164062 5.195312 9.109375 4.417969 10.523438 4.417969 C 13.460938 4.417969 14 6.351562 14 8.867188 L 14 14 Z M 13.996094
+                            14 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item ">
+                            <a href="# " class="footer-top__social-link ">
+                                <?xml version="1.0 " encoding="UTF-8 "?>
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
+                                    width="16pt " height="16pt " viewBox="0 0 16 16 " version="1.1 ">
+                                    <g id="surface1 ">
+                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; " d="M 16 8.179688 C 16 12.601562 12.824219 15.75 8.132812 15.75 C 3.632812 15.75 0 12.289062 0 8 C 0 3.710938 3.632812 0.25 8.132812 0.25 C 10.320312 0.25 12.164062 1.015625 13.582031 2.277344 L 11.371094 4.304688
+                            C 8.476562 1.644531 3.09375 3.644531 3.09375 8 C 3.09375 10.703125 5.355469 12.894531 8.132812 12.894531 C 11.351562 12.894531 12.558594 10.695312 12.746094 9.554688 L 8.132812 9.554688 L 8.132812 6.886719 L 15.871094 6.886719
+                            C 15.949219 7.285156 16 7.664062 16 8.179688 Z M 16 8.179688 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item ">
+                            <a href="# " class="footer-top__social-link ">
+                                <?xml version="1.0 " encoding="UTF-8 "?>
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
+                                    width="12pt " height="16pt " viewBox="0 0 12 16 " version="1.1 ">
+                                    <g id="surface1 ">
+                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; " d="M 6.375 0.203125 C 3.167969 0.203125 0 2.339844 0 5.800781 C 0 8 1.238281 9.25 1.988281 9.25 C 2.296875 9.25 2.476562 8.386719 2.476562 8.144531 C 2.476562 7.851562 1.734375 7.234375 1.734375 6.023438 C
+                            1.734375 3.511719 3.648438 1.730469 6.121094 1.730469 C 8.25 1.730469 9.824219 2.941406 9.824219 5.164062 C 9.824219 6.820312 9.160156 9.933594 7.003906 9.933594 C 6.226562 9.933594 5.558594 9.371094 5.558594 8.566406 C 5.558594
+                            7.382812 6.382812 6.242188 6.382812 5.023438 C 6.382812 2.953125 3.449219 3.328125 3.449219 5.828125 C 3.449219 6.351562 3.515625 6.933594 3.75 7.414062 C 3.320312 9.269531 2.4375 12.035156 2.4375 13.945312 C 2.4375 14.539062 2.523438
+                            15.117188 2.578125 15.710938 C 2.683594 15.828125 2.632812 15.816406 2.792969 15.757812 C 4.367188 13.601562 4.3125 13.179688 5.023438 10.355469 C 5.410156 11.085938 6.402344 11.480469 7.191406 11.480469 C 10.507812 11.480469 12
+                            8.246094 12 5.332031 C 12 2.226562 9.320312 0.203125 6.375 0.203125 Z M 6.375 0.203125 " />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+
+                <div class=" footer-top--nav ">
+                    <h6 class="footer-top__title ">
+                        Useful Links
+                    </h6>
+                    <ul class="footer-top__list ">
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                Help & Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=" footer-top--nav ">
+                    <h6 class="footer-top__title ">
+                        My Account
+                    </h6>
+                    <ul class="footer-top__list ">
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                My Account
+                            </a>
+                        </li>
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                My Cart
+                            </a>
+                        </li>
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                My WIshlist
+                            </a>
+                        </li>
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                Registration
+                            </a>
+                        </li>
+                        <li class="footer-top__item ">
+                            <a href="# " class="footer-top__link ">
+                                Check Out
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-top__item footer-top__item--form ">
+                    <h6 class="footer-top__title ">
+                        Subscribe Our Newsletter
+                    </h6>
+                    <p class="footer-top__text ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                    </p>
+                    <form action="# " class="footer-top__form ">
+                        <input type="email " class="footer-top__form-input " name="mailaddress"
+                            placeholder="Your email address ">
+                        <button class="footer-top__form-btn " type="submit ">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom ">
+                <p class="footer-bottom__copy ">
+                    © 2019 CodeAstrology. All Rights Reserved.
+                </p>
+                <div class="footer-bottom__accept ">
+                    We Accept
+                    <img src="images/icons/pay/mastercart.png " alt="Mastercard" class="footer-bottom__accept-img ">
+                    <img src="images/icons/pay/visa.png " alt="Visa" class="footer-bottom__accept-img ">
+                    <img src="images/icons/pay/paypal.png " alt="Paypal" class="footer-bottom__accept-img ">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/min.global.js"></script>
+    <script src="js/min.shop.js"></script>
+</body>
+
+</html>
