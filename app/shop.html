@@ -10,6 +10,19 @@
 </head>
 
 <body>
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Marcho</title>
+</head>
+
+<body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -19,24 +32,24 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="#">Home</a>
+                            <a class="menu__link @@Home" href="index.html">Home</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Shop</a>
+                            <a class="menu__link menu__link--active" href="shop.html">Shop</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Page</a>
+                            <a class="menu__link @@Page" href="#">Page</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Blog</a>
+                            <a class="menu__link @@Blog" href="blog.html">Blog</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Contact</a>
+                            <a class="menu__link @@Contact" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="user-nav">
-                    <a class="user-nav__link user-nav__link--user" href="#"></a>
+                    <a class="user-nav__link user-nav__link--user" href="register.html"></a>
                     <a class="user-nav__link user-nav__link--search" href="#"></a>
                     <a class="user-nav__link user-nav__link--heart" href="#">
                         <span class="user-nav__num">3</span>
@@ -48,11 +61,14 @@
             </div>
         </div>
     </header>
+</body>
+
+</html>
 
     <main class="main blocks">
         <section class="middle-menu blocks" style="background-image: url(images/bg-middle.jpg);">
             <h2 class="middle-menu__title">
-                Register
+                Shop page
             </h2>
 
             <div class="bread-crumbs">
@@ -99,23 +115,16 @@
                             Price Filter
                         </h3>
                         <input type="text" class="js-range-slider" name="my_range" value="" data-type="double"
-                            
-                            data-min="0" 
-                            data-max="1500" 
-                            data-from="500" 
-                            data-to="1000" 
-                            data-grid="false"
-                            data-hide-min-max="true"
-                            data-hide-from-to="true" 
-                            />
-                            <div class="aside__range">
+                            data-min="0" data-max="1500" data-from="500" data-to="1000" data-grid="false"
+                            data-hide-min-max="true" data-hide-from-to="true" />
+                        <div class="aside__range">
                             <div class="aside__range-box">
                                 Price:
                                 $<span class="aside__range--from"></span>-
                                 $<span class="aside__range--to"></span>
                             </div>
-                                <button class="aside__range-btn">Filter</button>
-                            </div>
+                            <button class="aside__range-btn">Filter</button>
+                        </div>
                     </div>
                     <div class="aside__item">
                         <h3 class="aside__title">
@@ -224,43 +233,43 @@
                         <h3 class="aside__title">
                             CATEGORY
                         </h3>
-                        <div class="aside__category-item">
+                        <div class="aside__category-item" id="is-active-item">
                             <span class="aside__category-text">Woman</span>
                             <span class="aside__category-num">48</span>
                         </div>
-                        <div class="aside__category-item">
+                        <div class="aside__category-item" id="is-active-item">
                             <span class="aside__category-text">Man</span>
                             <span class="aside__category-num">30</span>
                         </div>
-                        <div class="aside__category-item">
+                        <div class="aside__category-item" id="is-active-item">
                             <span class="aside__category-text">Sale Products</span>
                             <span class="aside__category-num">92</span>
                         </div>
-                        <div class="aside__category-item">
+                        <div class="aside__category-item" id="is-active-item">
                             <span class="aside__category-text">Fashion</span>
                             <span class="aside__category-num">121</span>
                         </div>
-                        <div class="aside__category-item">
+                        <div class="aside__category-item" id="is-active-item">
                             <span class="aside__category-text">Hot Dress</span>
                             <span class="aside__category-num">52</span>
                         </div>
-                        <div class="aside__category-item">
+                        <div class="aside__category-item" id="is-active-item">
                             <span class="aside__category-text">Accessories</span>
                             <span class="aside__category-num">88</span>
                         </div>
                     </div>
-                    <div class="aside__item" id="active-bg">
+                    <div class="aside__item">
                         <h3 class="aside__title">
                             Popular Tags
                         </h3>
 
                         <div class="aside__tag-item">
-                            <a href="#" class="aside__tag-link">Sweetshirt</a>
-                            <a href="#" class="aside__tag-link">Man Accessories</a>
-                            <a href="#" class="aside__tag-link">Fashion</a>
-                            <a href="#" class="aside__tag-link">Polo</a>
-                            <a href="#" class="aside__tag-link">T-Shirt</a>
-                            <a href="#" class="aside__tag-link">Jewellery</a>
+                            <a href="#" class="aside__tag-link" id="is-active-item">Sweetshirt</a>
+                            <a href="#" class="aside__tag-link" id="is-active-item">Man Accessories</a>
+                            <a href="#" class="aside__tag-link" id="is-active-item">Fashion</a>
+                            <a href="#" class="aside__tag-link" id="is-active-item">Polo</a>
+                            <a href="#" class="aside__tag-link" id="is-active-item">T-Shirt</a>
+                            <a href="#" class="aside__tag-link" id="is-active-item">Jewellery</a>
                         </div>
                     </div>
                 </aside>
@@ -271,7 +280,7 @@
                             <span class="shop__buttons-name">
                                 Viev
                             </span>
-                            <span class="shop__buttons-icon">
+                            <span class="shop__buttons-icon picked">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="15px" height="15px">
                                     <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
@@ -287,75 +296,92 @@
                             </span>
 
                         </div>
-                        <div class="shop__buttons-sort">
-                            <div class="shop__buttons-sort-item">
-                                <span class="shop__buttons-sort-text">
-                                    Sort By Default
-                                </span>
-                                <span class="shop__buttons-sort-arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="10px" height="5px">
-                                        <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
-                                            d="M4.983,4.999 C4.803,4.999 4.624,4.939 4.487,4.820 L0.173,1.048 C-0.102,0.808 -0.102,0.419 0.173,0.179 C0.448,-0.060 0.893,-0.060 1.167,0.179 L4.983,3.516 L8.800,0.180 C9.075,-0.060 9.519,-0.060 9.794,0.180 C10.068,0.420 10.068,0.809 9.794,1.048 L5.480,4.820 C5.344,4.940 5.163,4.999 4.983,4.999 L4.983,4.999 Z" />
-                                    </svg>
-                                </span>
-
-
+                        <div class="shop__sort">
+                            <div class="select shop__select">
+                                <div class="selected__item shop__selected">
+                                    <span class="selected__text shop__selected-text">
+                                        Sort By Default
+                                    </span>
+                                    <span class=" selected__icon shop__selected-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="5px">
+                                            <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                                                d="M4.983,4.999 C4.803,4.999 4.624,4.939 4.487,4.820 L0.173,1.048 C-0.102,0.808 -0.102,0.419 0.173,0.179 C0.448,-0.060 0.893,-0.060 1.167,0.179 L4.983,3.516 L8.800,0.180 C9.075,-0.060 9.519,-0.060 9.794,0.180 C10.068,0.420 10.068,0.809 9.794,1.048 L5.480,4.820 C5.344,4.940 5.163,4.999 4.983,4.999 L4.983,4.999 Z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="dropdown__wrap shop__dropdown-wrap">
+                                    <div class="dropdown shop__dropdown dropdown">
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Sort By Default
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Sort By Color
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Sort By Size
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Sort By Category
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Sort By Popular Tags
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="shop__buttons-sort-item">
-                                <span class="shop__buttons-sort-text">
-                                    Show 9
-                                </span>
-                                <span class="shop__buttons-sort-arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="10px" height="5px">
-                                        <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
-                                            d="M4.983,4.999 C4.803,4.999 4.624,4.939 4.487,4.820 L0.173,1.048 C-0.102,0.808 -0.102,0.419 0.173,0.179 C0.448,-0.060 0.893,-0.060 1.167,0.179 L4.983,3.516 L8.800,0.180 C9.075,-0.060 9.519,-0.060 9.794,0.180 C10.068,0.420 10.068,0.809 9.794,1.048 L5.480,4.820 C5.344,4.940 5.163,4.999 4.983,4.999 L4.983,4.999 Z" />
-                                    </svg>
-                                </span>
 
-
+                            <div class="select shop__select">
+                                <div class="selected__item shop__selected">
+                                    <span class="selected__text shop__selected-text">
+                                        Show 1
+                                    </span>
+                                    <span class="selected__icon shop__selected-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="5px">
+                                            <path fill-rule="evenodd" fill="rgb(141, 141, 141)"
+                                                d="M4.983,4.999 C4.803,4.999 4.624,4.939 4.487,4.820 L0.173,1.048 C-0.102,0.808 -0.102,0.419 0.173,0.179 C0.448,-0.060 0.893,-0.060 1.167,0.179 L4.983,3.516 L8.800,0.180 C9.075,-0.060 9.519,-0.060 9.794,0.180 C10.068,0.420 10.068,0.809 9.794,1.048 L5.480,4.820 C5.344,4.940 5.163,4.999 4.983,4.999 L4.983,4.999 Z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="dropdown__wrap shop__dropdown-wrap">
+                                    <div class="dropdown shop__dropdown">
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Show 2
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Show 3
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Show 4
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Show 5
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Show 6
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Show 7
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Show 8
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Show 9
+                                        </span>
+                                        <span class="dropdown__item shop__dropdown-item">
+                                            Show 10
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="store-item__items store-item__items--shop-page">
-                        <div class="store-item__item">
-                            <img src="images/store-item/1.jpg " alt=" " class="store-item__photo ">
-                            <div class="store-item__actions">
-                                <button class="store-item__action">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
-                                        <path
-                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
-                                            fill="#29282d" fill-rule="evenodd" />
-                                    </svg>
-                                </button>
-                                <button class="store-item__action">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
-                                        <path
-                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
-                                            fill="#fe3e57" fill-rule="evenodd" />
-                                    </svg>
-
-                                </button>
-                                <button class="store-item__action">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                                        <path
-                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
-                                            fill="#29282d" fill-rule="evenodd" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
-                                <span class="store-item__price store-item__price--old">$27.00</span>
-                            </div>
-                        </div>
-                        <div class="store-item__item">
+                        <div class="store-item__item store-item__item--line">
                             <span class="store-item__sale">Sale</span>
                             <img src="images/store-item/2.jpg " alt=" " class="store-item__photo ">
                             <div class="store-item__actions">
@@ -383,10 +409,23 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line ">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
+
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
                             </div>
                         </div>
                         <div class="store-item__item">
@@ -416,10 +455,69 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
+
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="store-item__item">
+                            <img src="images/store-item/5.jpg " alt=" " class="store-item__photo ">
+                            <div class="store-item__actions">
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
+                                        <path
+                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="store-item__action">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                                        <path
+                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
+                                            fill="#fe3e57" fill-rule="evenodd" />
+                                    </svg>
+
+                                </button>
+                                <button class="store-item__action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <path
+                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
+                                            fill="#29282d" fill-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line ">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
+
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
                             </div>
                         </div>
                         <div class="store-item__item">
@@ -450,44 +548,23 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
-                            </div>
-                        </div>
-                        <div class="store-item__item">
-                            <img src="images/store-item/5.jpg " alt=" " class="store-item__photo ">
-                            <div class="store-item__actions">
-                                <button class="store-item__action">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20">
-                                        <path
-                                            d="M19.89 18.7l-5.81-5.81a7.944 7.944 0 10-1.18 1.178l5.81 5.81a.417.417 0 00.59 0l.59-.589a.421.421 0 000-.589zM7.93 14.167a6.25 6.25 0 116.25-6.25 6.254 6.254 0 01-6.25 6.246z"
-                                            fill="#29282d" fill-rule="evenodd" />
-                                    </svg>
-                                </button>
-                                <button class="store-item__action">
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line ">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
-                                        <path
-                                            d="M16 17.29L14.855 4.4a.553.553 0 00-.547-.51h-2.354a3.95 3.95 0 00-7.9 0H1.7a.55.55 0 00-.547.51L.008 17.29v.05a2.854 2.854 0 003 2.67h10a2.854 2.854 0 003-2.67.257.257 0 000-.05zM8.006 1.11a2.844 2.844 0 012.844 2.78H5.162a2.844 2.844 0 012.844-2.78zm5 17.79h-10a1.763 1.763 0 01-1.9-1.53L2.206 5h1.847v1.68a.552.552 0 001.1 0V5h5.692v1.68a.552.552 0 001.1 0V5H13.8l1.1 12.37A1.765 1.765 0 0113 18.9zm0 0"
-                                            fill="#fe3e57" fill-rule="evenodd" />
-                                    </svg>
-
-                                </button>
-                                <button class="store-item__action">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                                        <path
-                                            d="M19.75 4.589A6.683 6.683 0 0015.58.218c-1.71-.595-3.75 0-5.58 1.611C8.17.26 6.12-.293 4.42.26A6.884 6.884 0 00.25 4.631c-.47 1.57-.51 4.117 1.95 7.215 1.11 1.4 2.82 3.4 4.22 4.965 2.68 3.014 3.11 3.183 3.49 3.183h.17c.39 0 .77-.168 3.45-3.224a224.86 224.86 0 004.22-4.966c2.47-3.098 2.47-5.645 2-7.215zm-3.28 6.2c-1.96 2.462-5.32 6.324-6.47 7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986 4.986 0 013.11-3.225c1.23-.467 2.9.169 4.43 1.655a.84.84 0 001.06.126.447.447 0 00.22-.17c1.53-1.443 3.19-2.079 4.42-1.655a5.168 5.168 0 013.11 3.268c.51 1.699-.08 3.689-1.7 5.683z"
-                                            fill="#29282d" fill-rule="evenodd" />
-                                    </svg>
-                                </button>
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
-                                <span class="store-item__price store-item__price--old">$27.00</span>
                             </div>
                         </div>
                         <div class="store-item__item">
@@ -518,15 +595,26 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line ">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
+
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
                             </div>
                         </div>
-
                         <div class="store-item__item">
-                            <span class="store-item__sale">Sale</span>
                             <img src="images/store-item/7.jpg " alt=" " class="store-item__photo ">
                             <div class="store-item__actions">
                                 <button class="store-item__action">
@@ -553,15 +641,27 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line ">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
+
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
                             </div>
                         </div>
 
                         <div class="store-item__item">
-                            <span class="store-item__sale">Sale</span>
                             <img src="images/store-item/8.jpg " alt=" " class="store-item__photo ">
                             <div class="store-item__actions">
                                 <button class="store-item__action">
@@ -588,10 +688,23 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line ">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
+
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
                             </div>
                         </div>
 
@@ -623,10 +736,23 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line ">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
+
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
                             </div>
                         </div>
 
@@ -658,10 +784,23 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line ">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
+
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
                             </div>
                         </div>
 
@@ -693,10 +832,23 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="store-item__text">
-                                <div class="store-item__stars" data-rateyo-rating="4"></div>
-                                <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
-                                <span class="store-item__price ">$34.00</span>
+                            <div class="store-item__text ">
+                                <div class="store-item__text-box">
+                                    <div class="store-item__stars" data-rateyo-rating="4"></div>
+                                    <h5 class="store-item__name ">White Polo Men’s T-Shirt</h5>
+                                    <span class="store-item__price ">$34.00</span>
+                                    <span class="store-item__price--old">$27.00</span>
+                                    <div class="store-item__hidden-line ">
+                                    <p class="store-item__par">
+                                        Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                        dolore magna aliqua.
+                                    </p>
+
+                                    <button class="store-item__button-add">
+                                        Add to cart
+                                    </button>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -706,32 +858,45 @@
         </div>
     </main>
 
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Marcho</title>
+</head>
+
+<body>
+
     <footer class="footer ">
         <div class="container ">
             <div class="footer-top ">
-                <address class=" footer-top--contact ">
+                <address class=" footer-top__contact ">
+
                     <a class="logo footer-top__logo " href="# ">
                         <img src="images/logo.png " alt="logo " class="logo__img ">
                     </a>
-                    <a href="# " class="footer-top__address-link footer-top__address-link--address ">
+
+                    <a href="# " class="footer-top__address-link">
                         No. 342 - London Oxford Street,
                     </a>
-                    <a href="# " class="footer-top__address-link footer-top__address-link--address ">
+                    <a href="# " class="footer-top__address-link">
                         012 United States
                     </a>
-                    <a href="mailto:Youremail@gmail.com "
-                        class="footer-top__address-link footer-top__address-link--mail ">
+                    <a href="mailto:Youremail@gmail.com " class="footer-top__address-link ">
                         Youremail@gmail.com
                     </a>
-                    <a href="tel:+0283 838 8393 " class="footer-top__address-link footer-top__address-link--phone ">
+                    <a href="tel:+0283 838 8393 " class="footer-top__address-link">
                         +0283 838 8393
                     </a>
-                    <ul class="footer-top__social-list ">
-                        <li class="footer-top__social-item ">
-                            <a href="# " class="footer-top__social-link ">
+                    <ul class="social__list">
+                        <li class="social__item ">
+                            <a href="# " class="social__link ">
                                 <?xml version="1.0 " encoding="UTF-8 "?>
-                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
-                                    width="9pt " height="14pt " viewBox="0 0 9 14 " version="1.1 ">
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="9pt " height="14pt " viewBox="0 0 9 14 " version="1.1 ">
                                     <g id="surface1 ">
                                         <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; "
                                             d="M 7.851562 7.875 L 8.25 5.339844 L 5.75 5.339844 L 5.75 3.695312 C 5.75 3.003906 6.097656 2.328125 7.21875 2.328125 L 8.355469 2.328125 L 8.355469 0.171875 C 8.355469 0.171875 7.324219 0 6.339844 0 C 4.277344
@@ -740,13 +905,13 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-top__social-item ">
-                            <a href="# " class="footer-top__social-link ">
+                        <li class="social__item ">
+                            <a href="# " class="social__link ">
                                 <?xml version="1.0 " encoding="UTF-8 "?>
-                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
-                                    width="14pt " height="14pt " viewBox="0 0 14 14 " version="1.1 ">
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="14pt " height="14pt " viewBox="0 0 14 14 " version="1.1 ">
                                     <g id="surface1 ">
-                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; " d="M 12.5625 4.148438 C 12.570312 4.273438 12.570312 4.398438 12.570312 4.523438 C 12.570312 8.316406 9.683594 12.683594 4.40625 12.683594 C 2.78125 12.683594 1.269531 12.214844 0 11.398438 C 0.230469 11.425781
+                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; "
+                                            d="M 12.5625 4.148438 C 12.570312 4.273438 12.570312 4.398438 12.570312 4.523438 C 12.570312 8.316406 9.683594 12.683594 4.40625 12.683594 C 2.78125 12.683594 1.269531 12.214844 0 11.398438 C 0.230469 11.425781
                             0.453125 11.433594 0.691406 11.433594 C 2.035156 11.433594 3.269531 10.980469 4.253906 10.207031 C 2.992188 10.179688 1.9375 9.355469 1.574219 8.21875 C 1.75 8.242188 1.925781 8.261719 2.113281 8.261719 C 2.371094 8.261719 2.628906
                             8.226562 2.871094 8.164062 C 1.554688 7.898438 0.570312 6.742188 0.570312 5.347656 L 0.570312 5.3125 C 0.949219 5.527344 1.394531 5.660156 1.867188 5.675781 C 1.09375 5.160156 0.585938 4.28125 0.585938 3.285156 C 0.585938 2.753906
                             0.726562 2.265625 0.976562 1.839844 C 2.390625 3.578125 4.511719 4.71875 6.894531 4.839844 C 6.847656 4.628906 6.824219 4.40625 6.824219 4.183594 C 6.824219 2.601562 8.101562 1.316406 9.691406 1.316406 C 10.519531 1.316406 11.265625
@@ -756,13 +921,13 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-top__social-item ">
-                            <a href="# " class="footer-top__social-link ">
+                        <li class="social__item ">
+                            <a href="# " class="social__link ">
                                 <?xml version="1.0 " encoding="UTF-8 "?>
-                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
-                                    width="14pt " height="16pt " viewBox="0 0 14 16 " version="1.1 ">
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="14pt " height="16pt " viewBox="0 0 14 16 " version="1.1 ">
                                     <g id="surface1 ">
-                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; " d="M 3.132812 14 L 0.230469 14 L 0.230469 4.652344 L 3.132812 4.652344 Z M 1.679688 3.378906 C 0.753906 3.378906 0 2.609375 0 1.679688 C 0 0.753906 0.753906 0 1.679688 0 C 2.609375 0 3.363281 0.753906 3.363281
+                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; "
+                                            d="M 3.132812 14 L 0.230469 14 L 0.230469 4.652344 L 3.132812 4.652344 Z M 1.679688 3.378906 C 0.753906 3.378906 0 2.609375 0 1.679688 C 0 0.753906 0.753906 0 1.679688 0 C 2.609375 0 3.363281 0.753906 3.363281
                             1.679688 C 3.363281 2.609375 2.609375 3.378906 1.679688 3.378906 Z M 13.996094 14 L 11.101562 14 L 11.101562 9.449219 C 11.101562 8.367188 11.078125 6.976562 9.589844 6.976562 C 8.082031 6.976562 7.851562 8.152344 7.851562 9.371094
                             L 7.851562 14 L 4.953125 14 L 4.953125 4.652344 L 7.734375 4.652344 L 7.734375 5.929688 L 7.777344 5.929688 C 8.164062 5.195312 9.109375 4.417969 10.523438 4.417969 C 13.460938 4.417969 14 6.351562 14 8.867188 L 14 14 Z M 13.996094
                             14 " />
@@ -770,26 +935,26 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-top__social-item ">
-                            <a href="# " class="footer-top__social-link ">
+                        <li class="social__item ">
+                            <a href="# " class="social__link ">
                                 <?xml version="1.0 " encoding="UTF-8 "?>
-                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
-                                    width="16pt " height="16pt " viewBox="0 0 16 16 " version="1.1 ">
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="16pt " height="16pt " viewBox="0 0 16 16 " version="1.1 ">
                                     <g id="surface1 ">
-                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; " d="M 16 8.179688 C 16 12.601562 12.824219 15.75 8.132812 15.75 C 3.632812 15.75 0 12.289062 0 8 C 0 3.710938 3.632812 0.25 8.132812 0.25 C 10.320312 0.25 12.164062 1.015625 13.582031 2.277344 L 11.371094 4.304688
+                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; "
+                                            d="M 16 8.179688 C 16 12.601562 12.824219 15.75 8.132812 15.75 C 3.632812 15.75 0 12.289062 0 8 C 0 3.710938 3.632812 0.25 8.132812 0.25 C 10.320312 0.25 12.164062 1.015625 13.582031 2.277344 L 11.371094 4.304688
                             C 8.476562 1.644531 3.09375 3.644531 3.09375 8 C 3.09375 10.703125 5.355469 12.894531 8.132812 12.894531 C 11.351562 12.894531 12.558594 10.695312 12.746094 9.554688 L 8.132812 9.554688 L 8.132812 6.886719 L 15.871094 6.886719
                             C 15.949219 7.285156 16 7.664062 16 8.179688 Z M 16 8.179688 " />
                                     </g>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-top__social-item ">
-                            <a href="# " class="footer-top__social-link ">
+                        <li class="social__item ">
+                            <a href="# " class="social__link ">
                                 <?xml version="1.0 " encoding="UTF-8 "?>
-                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
-                                    width="12pt " height="16pt " viewBox="0 0 12 16 " version="1.1 ">
+                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="12pt " height="16pt " viewBox="0 0 12 16 " version="1.1 ">
                                     <g id="surface1 ">
-                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; " d="M 6.375 0.203125 C 3.167969 0.203125 0 2.339844 0 5.800781 C 0 8 1.238281 9.25 1.988281 9.25 C 2.296875 9.25 2.476562 8.386719 2.476562 8.144531 C 2.476562 7.851562 1.734375 7.234375 1.734375 6.023438 C
+                                        <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1; "
+                                            d="M 6.375 0.203125 C 3.167969 0.203125 0 2.339844 0 5.800781 C 0 8 1.238281 9.25 1.988281 9.25 C 2.296875 9.25 2.476562 8.386719 2.476562 8.144531 C 2.476562 7.851562 1.734375 7.234375 1.734375 6.023438 C
                             1.734375 3.511719 3.648438 1.730469 6.121094 1.730469 C 8.25 1.730469 9.824219 2.941406 9.824219 5.164062 C 9.824219 6.820312 9.160156 9.933594 7.003906 9.933594 C 6.226562 9.933594 5.558594 9.371094 5.558594 8.566406 C 5.558594
                             7.382812 6.382812 6.242188 6.382812 5.023438 C 6.382812 2.953125 3.449219 3.328125 3.449219 5.828125 C 3.449219 6.351562 3.515625 6.933594 3.75 7.414062 C 3.320312 9.269531 2.4375 12.035156 2.4375 13.945312 C 2.4375 14.539062 2.523438
                             15.117188 2.578125 15.710938 C 2.683594 15.828125 2.632812 15.816406 2.792969 15.757812 C 4.367188 13.601562 4.3125 13.179688 5.023438 10.355469 C 5.410156 11.085938 6.402344 11.480469 7.191406 11.480469 C 10.507812 11.480469 12
@@ -801,7 +966,7 @@
                     </ul>
                 </address>
 
-                <div class=" footer-top--nav ">
+                <div class=" footer-top__nav ">
                     <h6 class="footer-top__title ">
                         Useful Links
                     </h6>
@@ -834,7 +999,7 @@
                     </ul>
                 </div>
 
-                <div class=" footer-top--nav ">
+                <div class=" footer-top__nav ">
                     <h6 class="footer-top__title ">
                         My Account
                     </h6>
@@ -873,12 +1038,10 @@
                         Subscribe Our Newsletter
                     </h6>
                     <p class="footer-top__text ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
                     </p>
                     <form action="# " class="footer-top__form ">
-                        <input type="email " class="footer-top__form-input " name="mailaddress"
-                            placeholder="Your email address ">
+                        <input type="email " class="footer-top__form-input " name ="email" placeholder="Your email address ">
                         <button class="footer-top__form-btn " type="submit ">Subscribe</button>
                     </form>
                 </div>
@@ -896,6 +1059,9 @@
             </div>
         </div>
     </footer>
+</body>
+
+</html>
     <script src="js/min.global.js"></script>
     <script src="js/min.shop.js"></script>
 </body>
