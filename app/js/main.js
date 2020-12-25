@@ -5,7 +5,7 @@ $(function() {
         fade: true,
     });
 
-    $(".trending__stars").rateYo({
+    $(".store-item__stars").rateYo({
         starWidth: "16px",
         readOnly: true,
         normalFill: "#ccccce",
@@ -16,6 +16,12 @@ $(function() {
             '</path>' +
             '</svg>',
     });
+
+    $('.top-slider__inner').slick({
+        dots: true,
+        arrows: false,
+        fade: true,
+});
 
 })
 

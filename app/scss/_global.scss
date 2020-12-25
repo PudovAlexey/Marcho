@@ -17,7 +17,8 @@ body {
 }
 
 .is-active-item {
-    background-color: #accent;
+    background-color: $accent;
+    color: #fff;
 }
 
 .main {
@@ -44,7 +45,7 @@ body {
 .title {
     font-size: 48px;
     line-height: 72px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     @extend %roboto-700;
     text-align: center;
     color: $title;
@@ -68,11 +69,12 @@ body {
 
 .bread-crumbs {
     display: flex;
-    
+
 }
 
 .radio {
     position: relative;
+
     &__square {
         display: inline-block;
         width: 15px;
@@ -80,10 +82,11 @@ body {
         border: 1px solid $default;
         margin-right: 15px;
     }
+
     &-checked__active {
         display: block;
         position: absolute;
-        line-height: 19px;
+        line-height: 23px;
         width: 15px;
         height: 15px;
         top: 0;
@@ -95,6 +98,78 @@ body {
 
 .store-item {
 
+    &__items {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &--shop-page {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &--line {
+            grid-template-columns: 1fr;
+            grid-gap: 40px;
+
+            .store-item__item {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border: 1px solid $default;
+    
+                .store-item__photo {
+                    height: 250px;
+                    max-width: 200px;
+                }
+            }
+
+            .store-item__text {
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    display: flex;
+                    flex-flow: row-reverse;
+        
+                    .store-item__stars {
+                        padding: 0;
+                        top: 30px;
+                        left: 150px;
+                        position: absolute;
+                    }
+            }
+
+            .store-item__actions {
+                left: 20px;
+            bottom: 70px;
+            background-color: transparent;
+            box-shadow: none;
+
+            .store-item__action{
+                border-radius: 50%;
+                background-color: #fff;
+                height: 50px;
+                width: 50px;
+                padding: 0;
+                & svg path {
+                    fill: $default;
+                }
+
+                &:first-child {
+                    margin-right: 15px;
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+            }
+
+            .store-item__hidden-line {
+                display: block;
+            }
+        }
+    }
+
     &__item {
         position: relative;
         overflow: hidden;
@@ -104,49 +179,11 @@ body {
         padding-top: 30px;
         padding-bottom: 20px;
         margin: 0 auto;
-}
-
-    &__items {
-        display: grid;
-        grid-gap: 30px;
-        grid-template-columns: 1fr 1fr 1fr;
-        &--shop-page {
-            grid-template-columns: 1fr 1fr;
-        }
     }
 
     &__text {
-        font-size: 22px;
-        line-height: 26px;
-        color: $title;
-        @extend %roboto-400;
         text-align: center;
-        text-transform: uppercase;
-    }
-
-    &__price {
-        font-size: 16px;
-        line-height: 26px;
-        margin-bottom: 20px;
-    }
-
-    &__price--old {
-        color: #ccccce;
-        text-decoration: line-through;
-        display: inline-block;
-        margin-left: 25px;
-    }
-
-    &__sale {
-        position: absolute;
-        top: 26px;
-        left: 25px;
-        @extend %roboto-400;
-        padding: 2px 12px;
-        color: #fff;
-        background-color: $accent;
-        text-align: center;
-        text-transform: uppercase;
+        padding: 30px 40px;
     }
 
     &__actions {
@@ -162,6 +199,50 @@ body {
         height: 52px;
         box-shadow: 0px 5px 30px 0px rgba(152, 152, 152, 0.2);
         transform: translateY(500%);
+    }
+
+    &__hidden-line {
+        display: none;
+    }
+
+    &__text-box {
+        position: relative;
+    }
+
+    &__name {
+        font-size: 22px;
+        line-height: 26px;
+        color: $title;
+        @extend %roboto-400;
+        text-transform: capitalize;
+    }
+
+    &__price {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+        color: $title;
+        @extend %roboto-400;
+
+        &--old {
+            color: #ccccce;
+            text-decoration: line-through;
+            display: inline-block;
+            margin-left: 25px;
+            margin-bottom: 0px;
+        }
+    }
+
+    &__sale {
+        position: absolute;
+        top: 26px;
+        left: 25px;
+        @extend %roboto-400;
+        padding: 2px 12px;
+        color: #fff;
+        background-color: $accent;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     &__action+.store-item__action {
@@ -185,13 +266,18 @@ body {
         position: relative;
         @extend %roboto-400;
         text-transform: uppercase;
-        margin: 40px auto 0;
+        margin: 50px auto 0;
         border: 1px solid $accent;
         padding: 10px 40px;
         background-color: transparent;
         cursor: pointer;
         color: $title;
-        max-width: 170px;
+        letter-spacing: 3px;
+        display: inline-block;
+    }
+
+    &__button-box {
+        display: flex;
     }
 
     &__action {
@@ -207,31 +293,155 @@ body {
             fill: $accent;
         }
     }
+
+    &__button-add {
+        @extend %btn;
+        color: #fff;
+        padding: 15px 40px;
+        text-transform: lowercase;
+        margin-top: 30px;
+        background-color: #000;
+    }
 }
 
 .social {
-&__list {
-    display: flex;
-    align-items: center;
-    border-top: 30px;
-}
+    &__list {
+        display: flex;
+        align-items: center;
+        border-top: 30px;
+    }
 
-&__item {
-    & + & {
-        margin-left: 18px;
+    &__item {
+        &+& {
+            margin-left: 18px;
+        }
+    }
+
+    &__link {
+        transition: all .3s;
+
+        path {
+            fill: $default;
+        }
+
+        &:hover {
+            path {
+                fill: $accent;
+            }
+        }
     }
 }
 
-&__link {
-    transition: all .3s;
+.active-item {
+    background-color: #fe4b62;
+    color: #fff;
+}
 
-    path {
-        fill: $default;
+.picked {
+    & svg path {
+        fill: $accent;
+    }
+}
+
+.select { 
+    position: relative;
+    top: 0;
+    z-index: 500;
+}
+
+.selected__item {
+    cursor: pointer;
+    border-bottom: 2px solid $default;
+}
+
+.dropdown {
+    padding: 10px;
+    transform: translateY(-500%);
+    &__wrap {
+        height: 500px;
+        position: absolute;
+        top: 40px;
+        overflow: hidden;
+        left: 0;
+        right: -30px;
+        transition: transform .5s;
+    }
+    &__item {
+        display: block;
+        cursor: pointer;
+    }
+
+    &--active {
+        transform: translateY(0%);
+        transition: transform .5s;
+    }
+}
+
+.blog-pages {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.comment {
+
+&__comment {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+&__comment-img {
+    margin-right: 30px;
+    width: 70px;
+    height: 70px;
+}
+
+&__comment-public {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    & .store-item__stars {
+        float: right;
+        padding: 0;
+        position: absolute;
+        right: 0;
+    }
+
+    & span {
+        display: block;
+    }
+}
+
+&__comment-name {
+    @extend %roboto-400;
+    margin-right: 30px;
+    color: $title
+}
+
+&__comment-time {
+    @extend %quicksand-500;
+}
+
+&__comment-message {
+    margin: 20px 0;
+}
+
+&__comment-link {
+    color: $default;
+
+    & svg path {
+        fill: $default
     }
 
     &:hover {
-        path {
-            fill: $accent;
+        color: $accent;
+
+        & svg path {
+            fill: $accent
         }
     }
 }
